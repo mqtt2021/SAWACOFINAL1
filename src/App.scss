@@ -1,0 +1,314 @@
+
+.App{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+        
+        .menu{
+          display: none;
+        }
+        .header{
+                background-color: rgb(9, 132, 227);  
+                width: 15%;
+                .divNavigation{
+                  width: 100%;
+                  .NavigationItem{
+                          width: 100%;
+                          height: 50px;
+                          display: flex;
+                          justify-content: space-around;
+                          font-size: 18px;
+                          color: aliceblue;
+                          align-items: center;
+                          cursor: pointer; 
+                          &:hover{
+                            background-color:rgb(166, 138, 230);
+                          }
+                          
+                          .NavigationItemIcon{
+                            display: flex;
+                            align-items: center;
+                            column-gap: 10px;
+                            // .slideBarItemIconText{
+                            //  display: flex;
+                            //  align-items: center;
+                            // }
+                          }
+                }
+                .WrapPositionWarning{
+                 
+                 
+                  .positionWarning{
+                    height: 50px;
+                    display: flex;
+                    align-items: center;                    
+                    color: aliceblue;
+                    font-size: 18px;
+                    padding-left: 25%;
+                    
+                    cursor: pointer;
+                    &:hover{
+                      background-color:rgb(166, 138, 230);
+                    }
+                  }
+                }
+                .NavigationItemWarning{
+                  .NavigationItemIcon{
+                   position: relative;
+                    .amountOfWarning{                       
+                        left: 110%;
+                        position: absolute;
+                        background-color: red;
+                        width: 25px;
+                        height: 25px;
+                        font-size: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                      }
+                  }
+                  
+
+                }
+
+
+                   
+                .divBatteryPercent{
+                  .batteryPercent{
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 10px;
+                    column-gap: 10px;
+                    font-size: 15px;
+                    color: aliceblue;
+                    align-items: center;
+                    cursor: pointer; 
+                    &:hover{
+                      background-color:rgb(166, 138, 230);
+                    }
+                  }
+                }
+
+                }
+                
+                
+                
+                
+        }
+
+        .divMap{
+            width: 84%;
+            position: relative;                    
+          .leaflet-container {
+            height: 100%;
+            width: 100%; 
+            .leaflet-popup-content{
+              width: 100%;
+                   .div-popup{
+                   
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    text-align: center;
+                    .infor{
+                      .inforItem{                                   
+                        margin-bottom: 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .title{
+                            font-size: 15px;
+                            font-weight: 700;
+                        }
+                        .value{
+                          font-size: 15px;
+                           
+                        }
+                      }
+                      .inforItemBlueTooth{
+                        
+                        position: relative;
+                        .btnBluetoothOn{
+                          position: absolute;
+                          left: 80%;
+                          top: 0%;
+                          width: 20%;
+                          height: 100%;
+                          font-size: 12px;
+                          color: aliceblue;
+                          
+                          background-color: green;
+                          border-radius: 5px;
+                        }
+                        .btnBluetoothOff{
+                          position: absolute;
+                          left: 80%;
+                          top: 0%;
+                          width: 20%;
+                          height: 100%;
+                          font-size: 12px;
+                          color: aliceblue;
+                          
+                          background-color: red;
+                          border-radius: 5px;
+                        }
+                      }
+                    }
+                   
+                   .button{
+                   
+                   }
+                   
+
+                
+                 }
+               }
+        }
+        }
+
+        @media (max-width: 768px) {
+          display: block; // xóa flex của App
+          .header{
+            width: 100%;
+            height: 8%;
+            position: relative;
+
+            .divNavigation{
+              display: none;
+            }
+
+            .menu{
+                padding-left: 2%;
+                background-color: rgb(9, 132, 227);  
+                width: 10%;  
+                display: block;
+                height: 100%;
+                display: flex;
+                align-items: center;               
+                font-size: 30px;
+                position: relative;
+                .amountOfWarning{    
+                  position: absolute;
+                  left: 100%;
+                  background-color: rgb(255, 0, 0);
+                  width: 25px;
+                  height: 25px;
+                  font-size: 20px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 50%;
+                }
+            }  
+
+          .divNavigationMobile{
+            width: 50%;
+            z-index: 4000;       
+            position: absolute;
+            background-color: rgb(9, 132, 227);   ;
+            .NavigationItem{
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    justify-content: space-around;
+                    font-size: 18px;
+                    color: aliceblue;
+                    align-items: center;
+                    cursor: pointer; 
+                    &:hover{
+                      background-color:rgb(166, 138, 230);
+                    }
+                    
+
+                    .NavigationItemIcon{
+                      display: flex;
+                      align-items: center;
+                      column-gap: 10px;
+                      .slideBarItemIconText{
+                       display: flex;
+                       align-items: center;
+                      }
+                    }
+          }
+          .NavigationItemWarning{
+            
+            .NavigationItemIcon{
+              
+              position: relative;
+                .amountOfWarning{                 
+                 
+                  position: absolute;
+                  left: 102%;
+                  background-color: rgb(255, 0, 0);
+                  width: 23px;
+                  height: 23px;
+                  font-size: 18px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 50%;
+                  
+                }
+            }
+            
+            .divAmountOfWarning{  
+                        
+              height: 100%;
+              position: relative;
+              display: flex;
+              align-items: center;
+              
+            }
+
+          }
+
+
+          .positionWarning{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding-left: 25%;
+            color: aliceblue;
+            font-size: 18px;
+            
+            cursor: pointer;
+            &:hover{
+              background-color:rgb(166, 138, 230);
+            }
+          }   
+          .divBatteryPercent{
+            .batteryPercent{
+              height: 30px;
+              display: flex;
+              justify-content: center;
+              margin-top: 10px;
+              column-gap: 10px;
+              font-size: 15px;
+              color: aliceblue;
+              align-items: center;
+              cursor: pointer; 
+              &:hover{
+                background-color:rgb(166, 138, 230);
+              }
+            }
+          }
+
+          }
+
+
+
+
+          }
+          
+         
+          
+          .divMap{
+            
+            width: 100%;
+            height:90%;             
+          }
+        }
+}
